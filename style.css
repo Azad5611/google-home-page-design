@@ -1,0 +1,101 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Cookie', cursive;
+font-family: 'Rubik', sans-serif;
+
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li{
+    list-style: none;
+    margin: 20px;
+}
+section header ul li a{
+color: purple;
+text-decoration: none;
+font-size: 20px;
+}
+section header ul li a button{
+    background-color: rgb(13, 239, 212);
+    color: rgb(237, 8, 237);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    outline: none;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+section .main{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+section .main .searchbox .search{
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right:65px;
+    border-radius: 20px;
+    border: 1px solid rgba(82, 78, 78, 0.244);
+    outline: none;
+    font-size: 25px;
+}
+
+section .main .searchbox .icons{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+
+}
+section .main .searchbox .buttons{
+    margin: 20px;
+  
+
+}
+section .main .searchbox .buttons button{
+ margin: 0 5px;
+ padding: 12px 20px;
+ color: rgb(43, 42, 42);
+ font-size: 20px;
+ border: none;
+ cursor: pointer;
+ border-radius: 1px solid transparent;
+ outline: none;
+}
