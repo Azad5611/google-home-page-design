@@ -86,6 +86,7 @@ section .main .searchbox .icons{
 }
 section .main .searchbox .buttons{
     margin: 20px;
+    margin-left: 160px;
   
 
 }
@@ -98,4 +99,7 @@ section .main .searchbox .buttons button{
  cursor: pointer;
  border-radius: 1px solid transparent;
  outline: none;
+}
+.language{
+    margin-left: 250px;
 }
