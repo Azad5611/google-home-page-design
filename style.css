@@ -1,8 +1,7 @@
 body{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Cookie', cursive;
 font-family: 'Rubik', sans-serif;
 
 }
@@ -16,11 +15,12 @@ section{
 }
 section header{
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     padding: 20px;
+    margin-top: -20px;
     
 }
 section header ul{
@@ -33,20 +33,17 @@ section header ul li{
     margin: 20px;
 }
 section header ul li a{
-color: purple;
+color: #111;
 text-decoration: none;
-font-size: 20px;
+font-size: 13px;
 }
-section header ul li a button{
-    background-color: rgb(13, 239, 212);
-    color: rgb(237, 8, 237);
-    border: none;
-    border-radius: 8px;
-    padding: 8px 14px;
-    outline: none;
-    font-size: 22px;
-    font-weight: bold;
-    cursor: pointer;
+.circle img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.img-9{
+    margin-right: 20px;
 }
 section .main{
     width: 580px;
@@ -59,47 +56,109 @@ section .main .searchbox{
     position: relative;
     width: 100%;
     margin-top: 20px;
-    justify-content: center;
 }
-
 section .main .searchbox .search{
     width: 100%;
-    padding: 10px;
-    padding-left: 50px;
-    padding-right:65px;
-    border-radius: 20px;
-    border: 1px solid rgba(82, 78, 78, 0.244);
+    padding: 13px;
+    padding-left: 45px;
+    padding: right 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
     outline: none;
-    font-size: 25px;
+    font-size: 16px;
 }
-
 section .main .searchbox .icons{
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 100%;
     display: flex;
-    padding: 15px 20px;
+    padding: 12px 20px;
     justify-content: space-between;
     align-items: center;
     pointer-events: none;
 
 }
-section .main .searchbox .buttons{
+section .main .buttons{
     margin: 20px;
-    margin-left: 160px;
   
-
 }
-section .main .searchbox .buttons button{
+section .main .buttons button{
  margin: 0 5px;
  padding: 12px 20px;
- color: rgb(43, 42, 42);
- font-size: 20px;
+ color: #555;
+ font-size: 14px;
  border: none;
  cursor: pointer;
  border-radius: 1px solid transparent;
  outline: none;
+ transition: all 0.9s;
 }
-.language{
-    margin-left: 250px;
+section .main .buttons button:hover{
+    border: 1px solid #ccc;
 }
+section .main .lang {
+    margin-top: 20px;
+    
+}
+.lang a{
+    text-decoration: none;
+    transition: all 1s;
+
+}
+.lang a:hover {
+    text-decoration: underline;
+}
+section .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+width: 100%;
+background: #f2f2f2;
+}
+section .footer .row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(0, 0, 0.05,);
+}
+section .footer .row ul{
+    display: flex;
+    
+}
+section .footer .row ul li{
+    list-style: none;
+    
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #5f6368;
+    margin-right: 25px;
+}
+#footer-text li{
+    list-style: none;
+}
+#footer-text li a {
+    text-decoration: none;
+    color: #5f6368;
+}
+/* Media Quary */
+@media (max-width:768px) {
+    section .main .searchbox .search{
+        width: 85%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    section .main .searchbox .icons{
+         width: 84%;
+        }
+    
+    section .footer .row {
+display: block;
+    }
+#row {
+    position: relative;
+    left: 100px;
+   }
+}
+
